@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/green_gradient.xml" value="0.2984375" />
+        <entry key="app/src/main/res/drawable-v24/green_gradient_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/green_gradient_for_button.xml" value="0.1765625" />
+        <entry key="app/src/main/res/drawable-v24/mail_pass_fields.xml" value="0.2984375" />
+        <entry key="app/src/main/res/drawable/alt_green_btn.xml" value="0.1461723573703032" />
+        <entry key="app/src/main/res/drawable/bot_nav_bar_color.xml" value="0.25555555555555554" />
+        <entry key="app/src/main/res/drawable/button_border.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/drawable/chip_select_color.xml" value="0.14572649572649574" />
+        <entry key="app/src/main/res/drawable/email_box.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/green_gradient_button.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/drawable/ic__.xml" value="0.24487179487179486" />
+        <entry key="app/src/main/res/drawable/ic__left_arrow.xml" value="0.13547008547008546" />
+        <entry key="app/src/main/res/drawable/ic_ant_design_upload_outlineddummy_pic.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_button.xml" value="0.2984375" />
+        <entry key="app/src/main/res/drawable/ic_devsoc_placeholder.xml" value="0.13931623931623932" />
+        <entry key="app/src/main/res/drawable/ic_down_arrow.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_home_bar.xml" value="0.2641350210970464" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2984375" />
+        <entry key="app/src/main/res/drawable/ic_login_hero.xml" value="0.2984375" />
+        <entry key="app/src/main/res/drawable/pill_button.xml" value="0.13533817045928684" />
+        <entry key="app/src/main/res/drawable/pill_button_bg.xml" value="0.2402448590977442" />
+        <entry key="app/src/main/res/drawable/profile.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/round_corner.xml" value="0.23076923076923078" />
+        <entry key="app/src/main/res/font/fira_sans_bold.xml" value="0.16458333333333333" />
+        <entry key="app/src/main/res/font/fira_sans_thin.xml" value="0.1" />
+        <entry key="app/src/main/res/font/firacode.xml" value="0.1703125" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.21621896184991188" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/add_team_to_hack.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/card_invites.xml" value="0.29001388752525187" />
+        <entry key="app/src/main/res/layout/card_project.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/card_project_edit.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/card_requests.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/card_team_and_chips_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/card_teammember.xml" value="0.33398243404872235" />
+        <entry key="app/src/main/res/layout/card_teams_and_chips_layout_sidearrow.xml" value="0.18034188034188034" />
+        <entry key="app/src/main/res/layout/create_team.xml" value="0.29953097030228626" />
+        <entry key="app/src/main/res/layout/delete_acc.xml" value="0.23162393162393163" />
+        <entry key="app/src/main/res/layout/dialog_join_team_code.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_participate_now.xml" value="0.23162393162393163" />
+        <entry key="app/src/main/res/layout/dialog_signout.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/find_a_team.xml" value="0.23541673944543912" />
+        <entry key="app/src/main/res/layout/fragment_add_team_to_hack.xml" value="0.11965811965811966" />
+        <entry key="app/src/main/res/layout/fragment_create_team.xml" value="0.10555555555555556" />
+        <entry key="app/src/main/res/layout/fragment_delete_acc.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/fragment_find_a_team.xml" value="0.38713414896194454" />
+        <entry key="app/src/main/res/layout/fragment_getting_started.xml" value="0.8189619736999039" />
+        <entry key="app/src/main/res/layout/fragment_hack_profile.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.23162393162393163" />
+        <entry key="app/src/main/res/layout/fragment_invites_and_requests.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/fragment_leaders_view.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_my_profile.xml" value="0.39929843660863534" />
+        <entry key="app/src/main/res/layout/fragment_my_profile_edit.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/fragment_my_team.xml" value="0.34129841354084295" />
+        <entry key="app/src/main/res/layout/fragment_project_add.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_project_edit.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.5794377084054325" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.21752136752136753" />
+        <entry key="app/src/main/res/layout/fragment_team_memberview.xml" value="0.10025366701167394" />
+        <entry key="app/src/main/res/layout/fragment_team_profile_participantsview.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/getting_started.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/gradient_button.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/hack_profile_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/home_activity.xml" value="0.134375" />
+        <entry key="app/src/main/res/layout/home_pg_card.xml" value="0.39713726111408776" />
+        <entry key="app/src/main/res/layout/item_dropdown.xml" value="0.5316632985654517" />
+        <entry key="app/src/main/res/layout/join_a_team.xml" value="0.3229594159018139" />
+        <entry key="app/src/main/res/layout/join_team_code_dialog.xml" value="0.2682135825014452" />
+        <entry key="app/src/main/res/layout/join_team_code_popup.xml" value="0.25427350427350426" />
+        <entry key="app/src/main/res/layout/login_fragment.xml" value="0.14754098360655737" />
+        <entry key="app/src/main/res/layout/my_profile.xml" value="0.3196075507573804" />
+        <entry key="app/src/main/res/layout/participate_now.xml" value="0.2395661485773453" />
+        <entry key="app/src/main/res/layout/project_cardview.xml" value="0.3841554559043348" />
+        <entry key="app/src/main/res/layout/settings.xml" value="0.3078901975755535" />
+        <entry key="app/src/main/res/layout/signout_dialog.xml" value="0.22839175688948365" />
+        <entry key="app/src/main/res/layout/signup_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/team_and_chips_layout.xml" value="0.25427350427350426" />
+        <entry key="app/src/main/res/layout/team_and_chips_layout_card.xml" value="0.13432835820895522" />
+        <entry key="app/src/main/res/layout/team_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/teams_and_chips_layout_sidearrow.xml" value="0.23162393162393163" />
+        <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/gender.xml" value="0.27037037037037037" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

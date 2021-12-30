@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/card_color"
+            android:theme="?attr/actionBarTheme">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/toplayout">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/arrow_style_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/side_margin"
+                        android:text="@string/lessthan" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/tbr_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="DevSoc Teams" />
+
+                    <TextView
+                        style="@style/arrow_style_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/greaterthan" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_color"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/side_margin"
+                android:drawableLeft="@drawable/ic_search_searchbutton"
+                android:hint="Search for teams"
+                android:paddingStart="@dimen/side_margin"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toplayout" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/subheading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/side_margin"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="@dimen/side_margin"
+                    android:gravity="left"
+                    android:text="Filter"
+                    android:textColor="@color/pill_button" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/side_margin"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text="Join a team using code"
+                    android:textColor="@color/pill_button" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            app:layout_constraintTop_toBottomOf="@id/linearLayt"
+            android:layout_margin="@dimen/side_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/side_margin"
+            android:background="@color/card_color"
+            android:layout_marginLeft="@dimen/side_margin"
+            android:layout_marginRight="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/side_margin">
+
+
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/backend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backend" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/machine_learning" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/appdev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_development" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/frontend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frontend" />
+
+            <com.google.android.material.chip.Chip
+
+                android:id="@+id/design"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ui_ux_design" />
+
+            <com.google.android.material.chip.Chip
+
+                android:id="@+id/management"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/management" />
+            <com.google.android.material.chip.Chip
+
+                android:id="@+id/blockchain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blockchain" />
+            <com.google.android.material.chip.Chip
+
+                android:id="@+id/cybersecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cybersecurity" />
+
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chipGroup"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginBottom="@dimen/side_margin"
+                android:layout_marginTop="@dimen/side_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/card_teams_and_chips_layout_sidearrow"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/card_color"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/arrow_style_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/side_margin"
+                    android:text="@string/lessthan" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/tbr_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/hack_profile" />
+
+                <TextView
+                    style="@style/arrow_style_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/greaterthan" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/imagePoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@tools:sample/avatars"></ImageView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_color"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_v_small">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/hackTitle"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devsoc"></com.google.android.material.textview.MaterialTextView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/side_margin">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/subheading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="organised by" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/organiserName"
+                    style="@style/body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Codechef">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:id="@+id/para1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_v_small"
+            android:layout_marginBottom="@dimen/margin_v_small"
+            android:background="@color/card_color"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/side_margin">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/clock_content"
+                    style="@style/subheading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/side_margin"
+                    android:layout_marginTop="@dimen/side_margin"
+                    android:drawableLeft="@drawable/ic_clock"
+                    android:drawablePadding="@dimen/margin_v_small"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Starts:" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/teamSize_content"
+                    style="@style/subheading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/ic_team_wale"
+                    android:drawablePadding="@dimen/margin_v_small"
+                    app:layout_constraintStart_toStartOf="@+id/prize"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Team" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/venue"
+                    style="@style/subheading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_location_pin"
+                    android:drawablePadding="@dimen/margin_v_small"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/clock_content"
+                    app:layout_constraintTop_toBottomOf="@+id/endTime"
+                    tools:text="Location" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/prize"
+                    style="@style/subheading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_trpohy_choti"
+                    android:drawablePadding="@dimen/margin_v_small"
+                    android:padding="@dimen/margin_v_small"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/prizeContent"
+                    tools:text="Prize Pool:" />
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="May 20,2021"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/clock_content"
+                    app:layout_constraintStart_toEndOf="@+id/clock_content" />
+
+                <TextView
+                    android:id="@+id/venueContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anna Audit"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/venue"
+                    app:layout_constraintStart_toEndOf="@+id/venue" />
+
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="May 21,2021"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/endTime"
+                    app:layout_constraintEnd_toEndOf="@+id/startDate" />
+
+                <TextView
+                    android:id="@+id/endTime"
+                    style="@style/subheading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ends:"
+                    app:layout_constraintEnd_toStartOf="@+id/endDate"
+                    app:layout_constraintTop_toBottomOf="@+id/clock_content" />
+
+                <TextView
+                    android:id="@+id/minTeam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="12sp"
+                    style="@style/subheading2"
+                    android:text="Max Members"
+                    app:layout_constraintStart_toEndOf="@+id/teamSize_content"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/prizeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="10 lakhs"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/maxMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    style="@style/subheading2"
+                    android:text="Min Members"
+                    app:layout_constraintEnd_toEndOf="@+id/minTeam"
+                    app:layout_constraintTop_toBottomOf="@+id/minTeam" />
+
+                <TextView
+                    android:id="@+id/minMem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="3"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/minTeam"
+                    app:layout_constraintStart_toEndOf="@+id/minTeam" />
+
+                <TextView
+                    android:id="@+id/maxMem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="5"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/maxMembers"
+                    app:layout_constraintStart_toEndOf="@+id/maxMembers" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/card_color"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/subheading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:text="About:"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/aboutContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est pulvinar facilisi phasellus magnis. Nec gravida mauris in fusce vitae pellentesque eget urna. Posuere quisque sit eget morbi vitae adipiscing. Sed sem tempor tincidunt amet. Tortor mauris ultrices eget purus diam aenean convallis eu ipsum." />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/Alt_green_bg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/side_margin"
+        android:layout_marginBottom="@dimen/side_margin"
+        android:text="Visit Website"
+        app:layout_constraintBottom_toTopOf="@+id/participateNowButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/participateNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="@dimen/side_margin"
+        android:gravity="center"
+        android:text="Participate Now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">hackmate</string>
+
+<!--    Auth-->
+<!--    //Login-->
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+<!--    //Signup-->
+    <string name="signup_btn">SIGN UP</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last Name</string>
+    <string name="skills">Skills</string>
+    <string name="upload_profile_picture">Upload Profile Picture</string>
+    <string name="college_university">College/University</string>
+    <string name="github_link">Github Link</string>
+    <string name="year_of_graduation">Year of Graduation</string>
+    <string name="gender">Gender</string>
+    <string name="personal_website">Personal Website(Optional)</string>
+    <string name="frontend">Frontend</string>
+    <string name="ui_ux_design">UI/UX design</string>
+    <string name="design">ui/ux</string>
+    <string name="management">Management</string>
+    <string name="backend">Backend</string>
+    <string name="machine_learning">Machine learning</string>
+    <string name="write_about_yourself">Write about yourself…</string>
+    <string name="create_profile">create profile</string>
+    <string name="app_development">App Development</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="lessthan"><![CDATA[<]]></string>
+    <string name="greaterthan"><![CDATA[>]]></string>
+    <string name="getting_started">Getting Started</string>
+    <string name="linkedin_link">Linkedin Link</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+
+<!--    getting started-->
+    <string name="profile">Profile</string>
+    <string name="teams">Teams</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="username">Username</string>
+    <string name="starts">Starts:</string>
+    <string name="ends">Ends:</string>
+    <string name="title">Title</string>
+    <string name="team_size">Team Size:</string>
+    <string name="know_more">KNOW MORE</string>
+    <string name="blockchain">Blockchain</string>
+    <string name="cybersecurity">CyberSecurity</string>
+    <string name="desiderata">Desiderata</string>
+    <string name="add_hack">+ Add hack</string>
+    <string name="nidhi">Nidhi</string>
+    <string name="hack_profile">Hack Profile</string>
+    <string name="save_changes">save changes</string>
+
+
+</resources>

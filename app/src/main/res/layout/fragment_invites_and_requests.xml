@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/card_color"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/arrow_style_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/side_margin"
+                    android:text="@string/lessthan" />
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/tbr_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Invites / Requests" />
+                <TextView
+                    style="@style/arrow_style_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/greaterthan" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/invites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invites"
+        android:drawableStart="@drawable/ic_down_arrow"
+        android:drawableTint="@color/text_secondary"
+        android:layout_margin="@dimen/margin_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/invitesrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/side_margin"
+        app:layout_constraintTop_toBottomOf="@id/invites"
+        tools:layout_editor_absoluteX="16dp"
+        tools:listitem="@layout/card_invites"
+        />
+
+    <TextView
+        android:id="@+id/requests"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Requests"
+        android:drawableStart="@drawable/ic_down_arrow"
+        android:drawableTint="@color/text_secondary"
+        app:layout_constraintStart_toStartOf="@+id/invitesrecyclerview"
+        app:layout_constraintTop_toBottomOf="@+id/invitesrecyclerview" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/requestsrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/requests"
+        android:layout_margin="@dimen/margin_large"
+        tools:listitem="@layout/card_requests"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

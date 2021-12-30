@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg_color"
+        android:padding="@dimen/side_margin">
+
+        <TextView
+            style="@style/title"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Name"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                style="@style/subheading1"
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/hackName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/subheading1"
+                android:text="Devsoc"
+                android:layout_weight="1"
+                android:gravity="right"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            style="@style/subheading2"
+            android:id="@+id/descriptionContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/side_margin"
+            android:text="description content this is "/>
+        <TextView
+            android:id="@+id/projectWebsite1"
+            android:linksClickable="true"
+            android:textColor="@color/link_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="www.projwebsite1.com"/>
+        <TextView
+            android:id="@+id/projectWebsite2"
+            android:linksClickable="true"
+            android:textColor="@color/link_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="www.projwebsite2.com"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/projectWebsite3"
+            android:linksClickable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/link_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="www.projwebsite3.com"/>
+            <ImageButton
+                android:id="@+id/deleteIcon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_vectorbin"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

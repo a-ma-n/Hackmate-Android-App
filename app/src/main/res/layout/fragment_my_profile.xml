@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:layout_marginTop="8dp"
+        android:text="Aman Ali"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textColor="@color/white"
+        style="@style/subheading1"
+        app:layout_constraintStart_toStartOf="@+id/nameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/nameTitle" />
+
+    <TextView
+        android:id="@+id/email"
+        style="@style/subheading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        app:layout_constraintStart_toStartOf="@+id/usernameSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/usernameSubtitle" />
+
+    <TextView
+        android:id="@+id/emailContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        style="@style/subheading2"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/email"
+        app:layout_constraintStart_toEndOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Skills:"
+                app:layout_constraintStart_toStartOf="@+id/chipGroup"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/side_margin"
+        android:drawableEnd="@drawable/ic_edit"
+        android:drawablePadding="@dimen/side_margin"
+        android:text="Edit Profile"
+        android:textColor="@color/pill_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/skills" />
+    <com.google.android.material.chip.ChipGroup
+        app:layout_constraintTop_toBottomOf="@id/skills"
+        android:clickable="false"
+        android:id="@+id/chipGroup"
+        android:layout_margin="@dimen/side_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout">
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/machine_learning"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frontend"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backend"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/management"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cybersecurity"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/design"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_development"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blockchain"/>
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/chipGroup">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_margin"
+            android:background="@color/field_fill"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/college"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College/University: "
+                android:textColor="@color/text_secondary"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/collegeContent"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="VIT Vellore"
+                android:textSize="14dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/field_fill"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/yearOfGraduation"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year Of Graduation: "
+                android:textColor="@color/text_secondary"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/yearOfGraduationContent"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="2024"
+                android:textSize="14dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_margin"
+            android:background="@color/field_fill"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/github"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Github link: "
+                android:textColor="@color/text_secondary"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/githubContent"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="www.github.com/a-ma-n"
+                android:clickable="true"
+                android:textSize="14dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/field_fill"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/linkedin"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Linkedin link: "
+                android:textColor="@color/text_secondary"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/linkedinContent"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:linksClickable="true"
+                android:text="www.linkedin.com/blah"
+                android:textSize="14dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/field_fill"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/personalWebsite"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Website: "
+                android:textColor="@color/text_secondary"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/personalWebsiteContent"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="-"
+                android:textSize="14dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_margin"
+            android:background="@color/field_fill"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bio"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio: "
+                android:textColor="@color/text_secondary"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/bioContent"
+                style="@style/mail_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="lorem ipsum ye wo tu mai"
+                android:textSize="14dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/projectsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Projects"
+        android:layout_margin="@dimen/side_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/projectsHeading"
+                tools:listitem="@layout/card_project" />
+
+        <TextView
+            android:id="@+id/addproject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_color"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic__plus"
+            android:text="Add a project"
+            app:layout_constraintTop_toBottomOf="@id/recyclerView3"
+            android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="save changes"
+                app:layout_constraintTop_toBottomOf="@id/addproject"
+                android:layout_marginTop="@dimen/side_margin"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="in.stc.hackmate.ui.home.home_main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_hackDetailsFragment"
+            app:destination="@id/hackDetailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_myTeamsFragment"
+            app:destination="@id/myTeamsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hackDetailsFragment"
+        android:name="in.stc.hackmate.ui.home.HackDetails.HackDetailsFragment"
+        android:label="HackDetailsFragment" >
+        <argument
+            android:name="obj"
+            app:argType="in.stc.hackmate.data.models.HackProfile" />
+        <action
+            android:id="@+id/action_hackDetailsFragment_to_participateNowDialog"
+            app:destination="@id/participateNowDialog" />
+        <action
+            android:id="@+id/action_hackDetailsFragment_to_teamCreateFragment"
+            app:destination="@id/teamCreateFragment" />
+        <action
+            android:id="@+id/action_hackDetailsFragment_to_addFromExistingFragment"
+            app:destination="@id/addFromExistingFragment" />
+        <action
+            android:id="@+id/action_hackDetailsFragment_to_joinTeamFragment"
+            app:destination="@id/joinTeamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myTeamsFragment"
+        android:name="in.stc.hackmate.ui.home.teams.MyTeamsFragment"
+        android:label="MyTeamsFragment" >
+        <action
+            android:id="@+id/action_myTeamsFragment_to_requestAndInviteFragment"
+            app:destination="@id/requestAndInviteFragment" />
+        <action
+            android:id="@+id/action_myTeamsFragment_to_teamProfileLeaderFragment"
+            app:destination="@id/teamProfileLeaderFragment" />
+        <action
+            android:id="@+id/action_myTeamsFragment_to_teamCreateFragment"
+            app:destination="@id/teamCreateFragment" />
+        <action
+            android:id="@+id/action_myTeamsFragment_to_teamProfileMemberFragment"
+            app:destination="@id/teamProfileMemberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="in.stc.hackmate.ui.home.profile.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+        <action
+            android:id="@+id/action_profileFragment_to_addProjectFragment"
+            app:destination="@id/addProjectFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="in.stc.hackmate.ui.home.search.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_participantViewFragment"
+            app:destination="@id/participantViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="in.stc.hackmate.ui.home.settings.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment2_to_deleteAccountFragment2"
+            app:destination="@id/deleteAccountFragment2" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteAccountFragment2"
+        android:name="in.stc.hackmate.ui.home.deleteAccount.DeleteAccountFragment"
+        android:label="DeleteAccountFragment" />
+    <fragment
+        android:id="@+id/addProjectFragment"
+        android:name="in.stc.hackmate.ui.home.project.AddProjectFragment"
+        android:label="AddProjectFragment" >
+        <action
+            android:id="@+id/action_addProjectFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="in.stc.hackmate.ui.home.profile.EditProfileFragment"
+        android:label="EditProfileFragment" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="in.stc.hackmate.ui.home.HomeActivity"
+        android:label="HomeActivity" />
+    <dialog
+        android:id="@+id/participateNowDialog"
+        android:name="in.stc.hackmate.ui.dialogs.ParticipateNowDialog"
+        android:label="ParticipateNowDialog"
+        tools:layout="@layout/dialog_participate_now"/>
+    <fragment
+        android:id="@+id/addFromExistingFragment"
+        android:name="in.stc.hackmate.ui.home.team_add_from_existing.AddFromExistingFragment"
+        android:label="AddFromExistingFragment" />
+    <fragment
+        android:id="@+id/joinTeamFragment"
+        android:name="in.stc.hackmate.ui.home.team_join.JoinTeamFragment"
+        android:label="JoinTeamFragment" />
+    <fragment
+        android:id="@+id/teamCreateFragment"
+        android:name="in.stc.hackmate.ui.home.team_create.TeamCreateFragment"
+        android:label="TeamCreateFragment" />
+    <fragment
+        android:id="@+id/requestAndInviteFragment"
+        android:name="in.stc.hackmate.ui.home.requestsandinvites.RequestAndInviteFragment"
+        android:label="RequestAndInviteFragment" >
+        <action
+            android:id="@+id/action_requestAndInviteFragment_to_teamMemberProfileFragment2"
+            app:destination="@id/teamMemberProfileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamProfileLeaderFragment"
+        android:name="in.stc.hackmate.ui.home.team_profile.TeamProfileLeaderFragment"
+        android:label="TeamProfileLeaderFragment" >
+        <argument
+            android:name="team"
+            app:argType="in.stc.hackmate.data.models.Team" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamProfileMemberFragment"
+        android:name="in.stc.hackmate.ui.home.team_profile.TeamProfileMemberFragment"
+        android:label="TeamProfileMemberFragment" >
+        <argument
+            android:name="team"
+            app:argType="in.stc.hackmate.data.models.Team" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamMemberProfileFragment2"
+        android:name="in.stc.hackmate.ui.home.team_MemberProfile.TeamMemberProfileFragment"
+        android:label="TeamMemberProfileFragment" />
+    <fragment
+        android:id="@+id/participantViewFragment"
+        android:name="in.stc.hackmate.ui.home.team_participant_view.ParticipantViewFragment"
+        android:label="ParticipantViewFragment" >
+        <argument
+            android:name="team"
+            app:argType="in.stc.hackmate.data.models.Team" />
+    </fragment>
+
+</navigation>

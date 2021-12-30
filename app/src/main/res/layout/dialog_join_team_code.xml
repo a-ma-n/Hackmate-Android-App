@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/card_color"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/title"
+        android:text="Enter the team code"
+        android:layout_margin="@dimen/side_margin"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/mail_fields"
+        android:textColorHint="@color/text_secondary"
+        android:hint="Team code"
+        android:layout_margin="@dimen/side_margin"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="join team"
+        android:layout_margin="@dimen/side_margin" />
+
+
+</LinearLayout>

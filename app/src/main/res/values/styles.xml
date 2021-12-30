@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="cards" parent ="Widget.MaterialComponents.CardView">
+        <item name="background">@color/card_color</item>
+        <item name="textAppearanceHeadline5">@color/white</item>
+        <item name="textAppearanceBody1">@color/white</item>
+        <item name="textAppearanceBody2">@color/text_secondary</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusBottomEnd">5dp</item>
+        <item name="boxCornerRadiusBottomStart">5dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="boxBackgroundColor">@color/field_fill</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="textFillColor">@color/white</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="SpinnerDropdown" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusBottomEnd">5dp</item>
+        <item name="boxCornerRadiusBottomStart">5dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="boxBackgroundColor">@color/field_fill</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="endIconTint">@color/text_secondary</item>
+    </style>
+
+    <style name="mail_fields" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/mail_pass_fields</item>
+        <item name="android:fontWeight">300</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+    </style>
+
+    <style name="buttonText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:fontWeight">700</item>
+        <item name="fontWeight">700</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="green_bg_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/green_gradient_for_button</item>
+        <item name="android:textAppearance">@style/buttonText</item>
+    </style>
+
+    <style name="Alt_green_bg_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/alt_green_btn</item>
+        <item name="android:textColor">@color/pill_button</item>
+        <item name="fontWeight">700</item>
+    </style>
+
+    <style name="tbr_textview" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textSize" tools:ignore="DuplicateDefinition">18sp</item>
+        <item name="android:fontFamily">@font/fira_sans_bold</item>
+        <item name="color">@color/white</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="arrow_style_title" parent="@style/tbr_textview">
+    <item name="android:textColor">@color/pill_button</item>
+    <item name="android:textSize">20sp</item>
+
+</style>
+
+    <style name="TitleText" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">34sp</item>
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="Pill" parent="@style/Widget.MaterialComponents.Chip.Filter">
+        <item name="chipStrokeColor">@color/pill_button</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/pill_button</item>
+        <item name="background">@color/pill_fill</item>
+        <item name="textFillColor">@color/pill_button</item>
+        <item name="checkedIconEnabled">false</item>
+        <item name="checkedIcon">@null</item>
+<!--        <item name="background">@color/chip_select_color_bg</item>-->
+<!--        <item name="textFillColor">@color/text_pill_state_list</item>-->
+    </style>
+
+    <style name="PillChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipStrokeColor">@color/pill_button</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/pill_button</item>
+        <item name="background">@color/pill_fill</item>
+        <item name="textFillColor">@color/pill_button</item>
+        <item name="checkedIconEnabled">false</item>
+        <item name="checkedIcon">@null</item>
+        <!--        <item name="background">@color/chip_select_color_bg</item>-->
+        <!--        <item name="textFillColor">@color/text_pill_state_list</item>-->
+    </style>
+    <style name="PillSelelcted" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipStrokeColor">@color/pill_button</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="background">@color/pill_button</item>
+        <item name="textFillColor">@color/white</item>
+        <item name="checkedIconEnabled">false</item>
+        <item name="checkedIcon">@null</item>
+        <!--        <item name="background">@color/chip_select_color_bg</item>-->
+        <!--        <item name="textFillColor">@color/text_pill_state_list</item>-->
+    </style>
+
+
+    <style name="menu_style" parent="@style/Theme.MaterialComponents.CompactMenu">
+        <item name="background">@color/field_fill</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="title" parent="@style/TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="subheading1" parent="@style/TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="subheading2" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="body1" parent="@style/TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="body2" parent="@style/TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+</resources>
+
+
+

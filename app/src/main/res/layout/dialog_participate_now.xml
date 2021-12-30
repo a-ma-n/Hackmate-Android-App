@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/card_color"
+    android:orientation="vertical">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/title"
+            android:text="Participate now"
+            android:layout_margin="@dimen/side_margin"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addExisting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/green_bg_button"
+            android:layout_margin="@dimen/side_margin"
+            android:text="Add from existing"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/joinExisting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/green_bg_button"
+        android:layout_margin="@dimen/side_margin"
+        android:text="join from existing"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/green_bg_button"
+        android:layout_margin="@dimen/side_margin"
+        android:text="create a team"/>
+    </LinearLayout>
+
+

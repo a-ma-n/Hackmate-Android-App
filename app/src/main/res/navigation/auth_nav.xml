@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/auth_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="in.stc.hackmate.ui.auth.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_gettingStartedFragment"
+            app:destination="@id/gettingStartedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="in.stc.hackmate.ui.auth.signin.SignupFragment"
+        android:label="SignupFragment" >
+
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gettingStartedFragment"
+        android:name="in.stc.hackmate.ui.auth.gettingStarted.GettingStartedFragment"
+        android:label="GettingStartedFragment" />
+</navigation>

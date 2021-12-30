@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/card_color"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/arrow_style_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/side_margin"
+                    android:text="@string/lessthan" />
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/tbr_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/nidhi"
+                    />
+                <TextView
+                    style="@style/arrow_style_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/greaterthan" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mail_fields"
+            android:text="Nidhi"
+            android:layout_marginTop="@dimen/side_margin"
+            android:textColorHint="@color/text_secondary"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mail_fields"
+            android:hint="Project Description"
+            android:layout_marginTop="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:textColorHint="@color/text_secondary"/>
+        <TextView
+            android:id="@+id/github"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mail_fields"
+            android:hint="Github Link"
+            android:layout_marginTop="@dimen/side_margin"
+            android:textColorHint="@color/text_secondary"/>
+        <TextView
+            android:id="@+id/design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mail_fields"
+            android:hint="Design Link"
+            android:layout_marginTop="@dimen/side_margin"
+            android:textColorHint="@color/text_secondary"/>
+        <TextView
+            android:id="@+id/demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mail_fields"
+            android:hint="Demo Link"
+            android:layout_marginTop="@dimen/side_margin"
+            android:textColorHint="@color/text_secondary"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/side_margin"
+        android:text="Save changes"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

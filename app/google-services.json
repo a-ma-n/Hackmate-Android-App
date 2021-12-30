@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "770962135087",
+    "project_id": "hackportal-450d0",
+    "storage_bucket": "hackportal-450d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770962135087:android:f69e687666bf621d420eda",
+        "android_client_info": {
+          "package_name": "com.example.hackmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsbixYUpOg6xGZaTuTiE2sdFMevKZ2O5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770962135087:android:bff06d023381f710420eda",
+        "android_client_info": {
+          "package_name": "com.example.trialemail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsbixYUpOg6xGZaTuTiE2sdFMevKZ2O5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770962135087:android:9c6f46e836c40602420eda",
+        "android_client_info": {
+          "package_name": "com.example.verificationid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsbixYUpOg6xGZaTuTiE2sdFMevKZ2O5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770962135087:android:2e7eaacb9514254b420eda",
+        "android_client_info": {
+          "package_name": "in.stc.hackmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsbixYUpOg6xGZaTuTiE2sdFMevKZ2O5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770962135087:android:53e3776558479547420eda",
+        "android_client_info": {
+          "package_name": "kavita.myappcompany.authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsbixYUpOg6xGZaTuTiE2sdFMevKZ2O5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770962135087-kbbqvk1e1ciivv97mn9s9qr915uasnd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

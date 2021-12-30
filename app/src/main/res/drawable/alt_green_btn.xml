@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  Gradient Bg for listrow -->
+
+
+    <item>
+        <!-- create gradient you want to use with the angle you want to use -->
+        <shape android:shape="rectangle" >
+            <gradient
+                android:startY="-11.1296"
+                android:startX="-76.8379"
+                android:endY="274.256"
+                android:endX="87.2059"
+                android:startColor="@color/button_gradient1"
+                android:endColor="@color/button_gradient2"
+                android:type="linear"
+                />
+            <corners android:radius="@dimen/button_corner_radius"/>
+
+        </shape>
+    </item>
+    <!-- create the stroke for top, left, bottom and right with the dp you want -->
+    <item
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/button_corner_radius"/>
+
+            <!-- fill the inside in the color you want (could also be a gradient again if you want to, just change solid to gradient and enter angle, start, maybe center, and end color) -->
+            <solid android:color="@color/pill_fill" />
+        </shape>
+    </item>
+
+</layer-list>
