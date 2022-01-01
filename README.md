@@ -1,2 +1,1 @@
-# hackmate-app
-added files
+# Hackmate-app
